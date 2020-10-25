@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 50%;
+    margin: 100px auto;
+    padding: 8px 12px;
+    background: gray;
+}
+
+main > h1,
+main > p {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    padding: 10px 35px;
+}
+
+form > div {
+    margin: 20px 0;
+    width: 100%;
+}
+ 
+form div > label,
+form div > p {
+    font-size: 18px;
+}
+
+form div > label {
+    line-height: 30px;
+}
+
+form div.block > * {
+    display: block;
+    width: 100%;
+}
+
+form div > input,
+form div > select,
+form div > textarea {
+    padding: 8px 15px;
+    font-size: 18px;
+}
+
+form div > textarea {
+    width: 100%;
+}
+
+button {
+    padding: 12px 20px;
+    color: #fff;
+    background: #888;
+    border-width: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+    width: 200px;
+    margin: 10px auto 0;
+}
+
+button:hover {
+    background: #fff;
+    color: #888;
+}

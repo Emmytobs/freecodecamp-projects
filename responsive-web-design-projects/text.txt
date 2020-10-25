@@ -1,0 +1,7 @@
+FreeCodeCamp's Exercises:
+1.) Build a Tribute Page:
+https://codepen.io/emmytobs/pen/qBZvYxX
+3.) Build a Survey Form:
+https://codepen.io/emmytobs/pen/wvWgYoq
+3.) Build a Product Landing Page:
+https://codepen.io/emmytobs/pen/ExyZWZL

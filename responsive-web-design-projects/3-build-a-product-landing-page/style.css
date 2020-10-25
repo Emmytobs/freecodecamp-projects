@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #EEEEEE;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #EEEEEE;
+}
+
+header img {
+    height: 35px;
+}
+
+
+header nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 30px;
+    line-height: auto;
+}
+
+header span {
+    display: none;
+}
+article {
+    margin-top: 70px;
+}
+
+article section {
+    width: 100%;
+}
+
+section#get-started-form h2 {
+    text-align: center;
+}
+
+section#get-started-form form {
+    width: 100%;
+}
+
+section#get-started-form form > * {
+    display: block;
+}
+
+section#get-started-form input[type="email"] {
+    width: 300px;
+    margin: 10px auto;
+    padding: 7px 5px;
+}
+
+section#get-started-form input[type="submit"] {
+    width: 180px;
+    margin: 10px auto;
+    background: #F1C40F;
+    color: #000;
+    font-weight: 900;
+    font-size: 15px;
+    border-width: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section#features {
+    margin: 100px auto 0 auto;
+    width: 100%;
+}
+
+.feature-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+    justify-content: space-around;
+}
+
+
+.icon {
+    color: orange;
+    flex: 0 0 100px;
+}
+
+.description {
+    flex: 1;
+}
+
+.description > * {
+    margin: 0;
+    padding: 0;
+}
+
+section#how-it-works {
+    margin: 80px auto 0 auto; 
+    width: 100%;  
+}
+
+section#how-it-works iframe {
+    width: 560px;
+    display: block;
+    margin: 0 auto;
+}
+
+section#pricing {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.product-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product {
+    border: 1px solid #333;
+    width: 290px;
+}
+
+.product * {
+    text-align: center;
+}
+
+.product > p {
+    background: #DDDDDD;
+    text-transform: uppercase;
+    color: #000;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product > h4 {
+    font-weight: 900;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.product .features > p {
+    margin: 7px 0;
+}
+
+.product button {
+    width: 30%;
+    display: block;
+    margin: 15px auto 10px;
+    text-transform: uppercase;
+    background: #F1C40F;
+    border-width: 0;
+    padding: 10px 15px;
+}
+
+footer {
+    width: 70%;
+    margin: 0 auto;
+    background: #DDDDDD;
+    padding: 30px 10px;
+}
+
+footer > * {
+    display: block;
+    text-align: right;
+}
+
+footer a {
+    color: #000;
+    display: inline-block;
+    margin: 0 7px;
+    text-decoration: none;
+}
+
+footer small {
+    line-height: 30px;
+}
+
+@media screen and (max-width: 900px) {
+        
+    header {
+    padding: 10px 20px;
+    background: #EEEEEE;
+    }
+
+    header img {
+    height: 30px;
+    }
+
+    header nav {
+    display: none;
+    }
+
+    header span {
+    display: block;
+    }
+    
+    .feature-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 25px;
+        margin: 20px 0;
+    }
+
+    .icon {
+        font-size: 25px;
+    }
+
+    section#how-it-works iframe {
+        width: 350px;
+    }
+
+    .product-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        margin: 20px 0;
+    }
+}
