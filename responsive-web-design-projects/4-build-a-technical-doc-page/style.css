@@ -91,4 +91,14 @@ div.code {
         width: 90%;
         margin: 0 auto;
     }
+    section.main-section ul {
+        padding-left: 30px;
+    }
+    code {
+        white-space: pre-line;
+    }
+    div.code {
+        padding: 20px;
+        text-align: center;
+    }
 }
