@@ -12,12 +12,6 @@ html, body {
     scroll-behavior: smooth
 }
 
-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 header {
     padding: 10px 0;
     font-size: 30px;
@@ -37,7 +31,7 @@ code {
 }
 
 body > nav {
-    flex: 0 0 330px;
+    width: 330px;
     padding: 10px 5px;
     position: fixed;
     left: 0;
@@ -46,7 +40,6 @@ body > nav {
 }
 
 body > main {
-    flex: 1;
     padding: 10px;
     margin: 0 40px 0 370px;
 }
@@ -79,4 +72,23 @@ section.main-section ul {
 
 div.code {
     background: #f1f0f0;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    body > nav {
+        position: relative;
+        display: none;
+    }
+    
+    body > main {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    section.main-section {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
