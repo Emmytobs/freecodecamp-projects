@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 40px;
+    background: #851a1a;
+    z-index: 10;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0 6px;
+    list-style: none;
+}
+
+header nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    height: 70px;
+    padding: 20px;
+    color: #000;
+}
+
+/* Style the profile-link class with white */
+header nav > a {
+    color: #fff;
+}
+
+header nav li:hover {
+    background: #35357e;
+}
+
+/* First Section */
+section#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #252525;
+}
+
+section#welcome-section > * {
+    margin: 12px 0;
+    text-align: center;
+}
+
+section#welcome-section h1 {
+    font-size: 70px;
+    margin: 5px 0;
+}
+
+section#welcome-section p {
+    font-size: 22px;
+    margin: 10px 0;
+    letter-spacing: 8px;
+    color: #851a1a;
+}
+
+/* Second Section */
+section#projects {
+    padding: 70px 0 20px;
+    background: #35357e;
+}
+
+section#projects > h2 {
+    font-size: 30px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+}
+
+section#projects > a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+section#projects .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section#projects .grid-container > * {
+    margin: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.project-title > * {
+    width: 100%;
+}
+
+.project-title img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-title .project-name {
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    background: #8d8dd38c;
+}
+
+section#projects a.show-more-btn {
+    display: block;
+    width: 150px;
+    padding: 15px 25px;
+    margin: 30px auto 0;
+    text-align: center;
+    background-color: #8d8dd38c;
+    border-radius: 4px;
+}
+
+footer {
+    height: 100vh;
+    background: #252525;
+    color: #fff;
+    padding: 1px 0 0 0;
+}
+
+footer > .work-together{
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .work-together h1 {
+    margin: 200px 0 0 0;
+    font-size: 70px;
+}
+
+footer > .work-together p {
+    font-size: 18px;
+    letter-spacing: 8px;
+}
+
+.social-container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-container a {
+    display: inline-block;
+    margin: 0px 30px;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    transition: margin .3s;
+}
+
+.social-container a:hover {
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.bottom-footer {
+    width: 100%;
+    border-top: 5px solid #851a1a;
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-footer > * {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+    section#projects .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-title > * {
+        width: 100%;
+    }
+
+    .project-title img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .project-title .project-name {
+        text-align: center;
+        font-size: 22px;
+        padding: 10px;
+        background: #8d8dd38c;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    section#projects .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .project-title > * {
+        width: 100%;
+    }
+
+    .project-title img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .project-title .project-name {
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        background: #8d8dd38c;
+    }
+}
